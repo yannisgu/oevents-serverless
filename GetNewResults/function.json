@@ -1,0 +1,24 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "name": "events",
+      "type": "table",
+      "tableName": "events",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },{
+      "name": "eventsOut",
+      "type": "table",
+      "tableName": "events",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}
